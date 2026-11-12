@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Consultation – Alice Precious</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="logo.png" alt="Alice Precious" class="nav-profile-pic">
+        <div><h1>ALICE PRECIOUS</h1><p>Book Marketing Strategist</p></div>
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container" style="max-width: 800px;">
+      <div class="text-center" style="margin-bottom: 48px;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Let's Discuss Your Next Literary Project</h2>
+        <p style="color: var(--gray); max-width: 600px; margin: 0 auto;">Have a book you want to promote? Looking for marketing support for your publishing business? Schedule a consultation to discuss your objectives and marketing opportunities.</p>
+      </div>
+      
+      <div style="background: white; padding: 48px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05);">
+        <form action="https://formspree.io/f/xrppwyay" method="POST">
+          <input type="hidden" name="form_type" value="Consultation Booking">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" required>
+            </div>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div class="form-group">
+              <label>Book Title</label>
+              <input type="text" name="book_title">
+            </div>
+            <div class="form-group">
+              <label>Book Genre</label>
+              <input type="text" name="book_genre">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Are you an Author or Publisher?</label>
+            <select name="client_type">
+              <option>Independent Author</option>
+              <option>Self-Published Author</option>
+              <option>Publisher</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>What are your main marketing goals?</label>
+            <textarea name="goals" rows="4" placeholder="e.g., Increase visibility, launch a new book, build my author brand..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Request Consultation</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="footer-logo">
+      <h3>Alice Precious</h3>
+      <p>Books Deserve to Be Discovered.</p>
+      <div class="footer-links">
+        <a href="https://www.facebook.com/profile.php?id=61590584740770" target="_blank">📘</a>
+        <a href="mailto:alicetprecious@gmail.com">✉️</a>
+      </div>
+      <p style="font-size: 0.875rem;">© <span id="year"></span> Alice Precious. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>

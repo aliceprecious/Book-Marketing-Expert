@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About – Alice Precious</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR (Same on every page) -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="l" alt="Alice Precious" class="nav-profile-pic">
+        <div><h1>ALICE PRECIOUS</h1><p>Book Marketing Strategist</p></div>
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 48px;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Meet Alice Precious</h2>
+        <div style="width: 80px; height: 4px; background: var(--gold); margin: 0 auto;"></div>
+      </div>
+      <div class="grid-2">
+        <div style="position: relative;">
+          <img src="logo.png" alt="Alice Precious" style="border-radius: 8px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 4px solid white;">
+          <div style="position: absolute; bottom: -24px; right: -24px; background: var(--brown); color: white; padding: 24px; border-radius: 8px; box-shadow: 0 10px 15px rgba(0,0,0,0.1); display: none; md:block;">
+            <p style="font-size: 2rem; font-weight: 700; font-family: 'Playfair Display', serif;">10+</p>
+            <p style="font-size: 0.875rem; text-transform: uppercase; letter-spacing: 1px;">Years Experience</p>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size: 1.75rem; color: var(--brown); margin-bottom: 16px;">Helping stories find their audience.</h3>
+          <p style="margin-bottom: 16px; color: #4B5563;">Alice Precious is an independent book marketing professional with ten years of experience, passionate about helping authors and publishers navigate the world of book promotion and literary visibility.</p>
+          <p style="margin-bottom: 16px; color: #4B5563;">The philosophy is simple: publishing a book is an important achievement, but helping that book reach its audience is another essential part of its journey. Through personalized marketing strategies and thoughtfully developed promotional campaigns, I support authors and publishers at different stages of their publishing journey.</p>
+          <div style="border-left: 4px solid var(--gold); padding-left: 16px; font-style: italic; color: var(--navy); font-weight: 500;">
+            "My commitment is to approach every project with creativity, professionalism, integrity, and a genuine understanding of the author's goals."
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (Same on every page) -->
+  <footer class="footer">
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="footer-logo">
+      <h3>Alice Precious</h3>
+      <p>Books Deserve to Be Discovered. Strategic book marketing for authors and publishers worldwide.</p>
+      <div class="footer-links">
+        <a href="https://www.facebook.com/profile.php?id=61590584740770" target="_blank">📘</a>
+        <a href="mailto:alicetprecious@gmail.com">✉️</a>
+      </div>
+      <p style="font-size: 0.875rem;">© <span id="year"></span> Alice Precious. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>

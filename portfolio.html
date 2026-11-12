@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – Alice Precious</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="logo.png" alt="Alice Precious" class="nav-profile-pic">
+        <div><h1>ALICE PRECIOUS</h1><p>Book Marketing Strategist</p></div>
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 64px;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Creativity Meets Literary Promotion</h2>
+        <p style="color: var(--gray); max-width: 600px; margin: 0 auto;">Explore the creative possibilities of professional book marketing, from promotional concepts to audience-focused campaigns.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <img src="book1.png" alt="Project 1" style="width: 100%; height: 200px; object-fit: cover; background: #E5E7EB;">
+          <div style="padding: 24px;">
+            <h4 style="margin-bottom: 8px;">Fiction Launch Campaign</h4>
+            <p style="font-size: 0.9rem; color: var(--gray);">Strategic social media rollout and reader engagement.</p>
+          </div>
+        </div>
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <img src="book2.png" alt="Project 2" style="width: 100%; height: 200px; object-fit: cover; background: #E5E7EB;">
+          <div style="padding: 24px;">
+            <h4 style="margin-bottom: 8px;">Non-Fiction Author Branding</h4>
+            <p style="font-size: 0.9rem; color: var(--gray);">Complete visual identity and website copy overhaul.</p>
+          </div>
+        </div>
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <img src="book3.png" alt="Project 3" style="width: 100%; height: 200px; object-fit: cover; background: #E5E7EB;">
+          <div style="padding: 24px;">
+            <h4 style="margin-bottom: 8px;">Publisher Catalogue Promotion</h4>
+            <p style="font-size: 0.9rem; color: var(--gray);">Multi-title marketing strategy for Q4 releases.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="footer-logo">
+      <h3>Alice Precious</h3>
+      <p>Books Deserve to Be Discovered.</p>
+      <div class="footer-links">
+        <a href="https://www.facebook.com/profile.php?id=61590584740770" target="_blank">📘</a>
+        <a href="mailto:alicetprecious@gmail.com">✉️</a>
+      </div>
+      <p style="font-size: 0.875rem;">© <span id="year"></span> Alice Precious. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>

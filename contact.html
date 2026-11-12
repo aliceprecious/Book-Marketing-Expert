@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Alice Precious</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-brand">
+        <img src="logo.png" alt="Alice Precious" class="nav-profile-pic">
+        <div><h1>ALICE PRECIOUS</h1><p>Book Marketing Strategist</p></div>
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container" style="max-width: 900px;">
+      <div style="background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); overflow: hidden; display: grid; grid-template-columns: 1fr 1fr;">
+        <div style="background: var(--navy); color: var(--ivory); padding: 48px; display: flex; flex-direction: column; justify-content: center;">
+          <h2 style="font-size: 2rem; color: var(--gold); margin-bottom: 24px;">Your Next Chapter Starts Here.</h2>
+          <p style="margin-bottom: 32px; opacity: 0.8;">Have a book marketing project in mind? Whether you're an independent author, established writer, or publishing professional, we'd love to hear about your goals.</p>
+          <div style="margin-bottom: 24px; display: flex; align-items: center; gap: 16px;">
+            <div style="width: 40px; height: 40px; background: var(--brown); border-radius: 50%; display: flex; align-items: center; justify-content: center;">✉️</div>
+            <div>
+              <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6;">Email</p>
+              <p style="font-weight: 500;">alicetprecious@gmail.com</p>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center; gap: 16px;">
+            <div style="width: 40px; height: 40px; background: var(--brown); border-radius: 50%; display: flex; align-items: center; justify-content: center;">📘</div>
+            <div>
+              <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6;">Facebook</p>
+              <a href="https://www.facebook.com/profile.php?id=61590584740770" target="_blank" style="font-weight: 500; color: var(--ivory);">Connect on Facebook</a>
+            </div>
+          </div>
+        </div>
+        
+        <div style="padding: 48px;">
+          <h3 style="font-size: 1.5rem; margin-bottom: 24px;">Send a Message</h3>
+          <form action="https://formspree.io/f/xrppwyay" method="POST">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <select name="subject">
+                <option>General Inquiry</option>
+                <option>BookSpark Package ($1,500)</option>
+                <option>Author Elevation Suite ($6,000)</option>
+                <option>Literary Legacy Partnership ($10,000)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Your Message</label>
+              <textarea name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <img src="logo.png" alt="Logo" class="footer-logo">
+      <h3>Alice Precious</h3>
+      <p>Books Deserve to Be Discovered.</p>
+      <div class="footer-links">
+        <a href="https://www.facebook.com/profile.php?id=61590584740770" target="_blank">📘</a>
+        <a href="mailto:alicetprecious@gmail.com">✉️</a>
+      </div>
+      <p style="font-size: 0.875rem;">© <span id="year"></span> Alice Precious. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>
